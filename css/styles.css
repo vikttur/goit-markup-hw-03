@@ -8,7 +8,8 @@
 	--color-bgr-hero: #2f303a;
 	--color-main: #757575;
 	--color-header: #212121;
-	--color-border: #EEEEEE;
+	--color-border-section: #ECECEC;
+	--color-border-card: #EEEEEE;
 	--color-footer-contact: rgba(255, 255, 255, 0.6);
 }
 
@@ -70,10 +71,14 @@ body .link:focus {
 	margin-right: auto;
 	margin-bottom: 0;
 
-	outline: 2px solid red;
+	/* outline: 2px solid red; */
 }
 
 /* header */
+.header {
+	border-bottom-color: var(--color-border-section);
+}
+
 .logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -238,26 +243,25 @@ body .link:focus {
 }
 
 /* portfolio */
-.projects-button {
-	min-width: 73px;
-	padding: 6px 22px;
-	background-color: var(--color-bgr-alternative);
+.projects {
+	padding-top: 180px;
+	padding-bottom: 8px;
+}
 
-	/* font-family: inherit; */
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.63;
-	letter-spacing: 0.03em;
-
-	color: var(--color-header);
+.box-button {
+	width: 1170px;
+	height: 250px;
+	margin-bottom: 34px;
+	outline: 2px solid red;
 }
 
 .projects-button {
 	min-width: 73px;
 	padding: 6px 22px;
 	background-color: var(--color-bgr-alternative);
-	/* font-family: inherit; */
+
 	font-weight: 500;
+	font-size: 16px;
 	line-height: 1.63;
 	letter-spacing: 0.03em;
 
@@ -275,10 +279,21 @@ body .link:focus {
 }
 
 .card-progects {
-	border: 1px solid var(--color-border);
+	border: 1px solid var(--color-border-card);
 }
 
+.card-text {
+	width: inherit;
+	padding: 20px 24px;
+	border-color: var(--color-border-card);
+}
+
+/* .projects-img {
+	margin-bottom: 20px;
+} */
+
 .projects-head {
+	margin-bottom: 4px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2.0;
@@ -287,6 +302,7 @@ body .link:focus {
 }
 
 .projects-text {
+	margin-bottom: 20px;
 	font-size: 16px;
 	line-height: 1.88;
 }
