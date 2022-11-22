@@ -14,7 +14,6 @@
 }
 
 body {
-	width: 1600px;
 	background-color: var(--color-bgr-head);
 
 	font-family: "Roboto", sans-serif;
@@ -22,22 +21,6 @@ body {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--color-main);
-}
-
-body .list {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-}
-
-body .button {
-	display: inline-block;
-	border: 1px solid transparent;
-	border-radius: 4px;
-
-	font-size: 16px;
-
-	cursor: pointer;
 }
 
 img {
@@ -81,7 +64,7 @@ body .link:focus {
 
 /* header */
 .header {
-	border: 1px solid var(--color-border-section);
+	border-bottom: 1px solid var(--color-border-section);
 }
 
 .logo {
@@ -111,7 +94,12 @@ body .link:focus {
 .nav-flex,
 .contact-flex {
 	display: flex;
+	padding: 0;
 	margin: 0;
+}
+
+.nav-flex {
+	margin-left: 93px;
 }
 
 .nav-flex>.item,
@@ -188,6 +176,16 @@ body .link:focus {
 	color: var(--color-bgr-head);
 }
 
+.button {
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	font-size: 16px;
+
+	cursor: pointer;
+}
+
 .hero-button {
 	min-width: 216px;
 	padding: 10px 32px;
@@ -196,8 +194,9 @@ body .link:focus {
 	font-weight: 700;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
-
 	color: var(--color-bgr-head);
+
+	border: none;
 }
 
 .hero-button:hover,
@@ -226,6 +225,12 @@ body .link:focus {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .idea-head {
@@ -315,17 +320,12 @@ body .link:focus {
 }
 
 /* portfolio */
-.projects {
-	padding-top: 180px;
-	padding-bottom: 8px;
-}
-
 .button-flex {
 	display: flex;
 	justify-content: center;
 }
 
-.button-flex>.item {
+.button-flex {
 	margin-bottom: 50px;
 }
 
@@ -361,7 +361,7 @@ body .link:focus {
 }
 
 .projects-flex>.item {
-	width: calc ((100%-60px)/3);
+	width: calc((100% - 60px) / 3);
 }
 
 .projects-flex>.item:not(:nth-child(3n)) {
