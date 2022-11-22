@@ -378,7 +378,6 @@ body .link:focus {
 }
 
 .card-text-progect {
-	width: inherit;
 	padding: 20px 24px;
 	border-right: 1px solid var(--color-border-card);
 	border-bottom: 1px solid var(--color-border-card);
